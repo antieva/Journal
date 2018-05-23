@@ -6,7 +6,8 @@ export function Entry(title, body) {
 Entry.prototype.countWords = function() {
   var newTitle = this.title.split(/[\s\.:;?!~,`"&|\(\)<>{}\[\]\r\n/\\]+/).filter(n => n);
   var newBody = this.body.split(/[\s\.:;?!~,`"&|\(\)<>{}\[\]\r\n/\\]+/).filter(n => n);
-  var count = newTitle.length + newBody.length;
+  var count = newTitle.length - newBody.length;
+  debugger;
   return count;
 };
 
