@@ -2,7 +2,7 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import $ from 'jquery';
-import { Entry } from './entry';
+import { Entry } from './entry.js';
 
 $(document).ready(function() {
   $('#more').on('click',function(){
