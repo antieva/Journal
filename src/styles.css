@@ -1,5 +1,5 @@
 body {
-  background-color: grey;
+  background-color: white;
 }
 
 #output {
@@ -8,4 +8,32 @@ body {
 
 .hidden {
   display: none;
+}
+
+.heading {
+  height: 200px;
+  padding-top: 5%;
+  text-align: center;
+}
+
+#teaser {
+  color: #617aa3;
+  font-size: 15pt;
+  display: none;
+}
+
+#more {
+  color: grey;
+}
+
+#title {
+  width: 300px;
+}
+
+#entry-body {
+  width: 500px;
+}
+
+#entry-output {
+  font-size: 15pt;
 }

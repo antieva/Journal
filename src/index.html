@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <title>Journal</title>
   </head>
   <body>
+    <div class="container heading">
+      <h1>My Journal</h1>
+    </div>
     <div class="container">
       <form id="journal-form">
         <div class="form-group">
           <label for="title">Title</label>
-          <input id="title" name="title" type="text">
+          <input id="title" class="form-control" name="title" type="text">
         </div>
         <div class="form-group">
           <label for="entry-body">Text</label>
-          <input id="entry-body" name="entry-body" type="text">
+          <input id="entry-body" class="form-control" name="entry-body" type="text">
         </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit" class="btn">Submit</button>
       </form>
 
-      <div id="output" class="jumborton">
+      <br>
+      <div id="output" class="jumbotron">
         <h3><span id="title-output"></span></h3>
-        <p><span id="entry-output"></span><span id="teaser"></span></p>
+        <p><span id="entry-output"></span><span id="teaser"></span><span id="more">...see more</span></p>
         <p>There are <span id="words"></span> words, <span id="vowels"></span> vowels, and <span id="consonants"></span> in this journal entry</p>
       </div>
     </div>
